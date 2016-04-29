@@ -1,0 +1,27 @@
+main() 
+int $a, int $b;
+{
+
+	$a = read();
+	$b = read();
+	
+	if($a < $b) then {
+		write(1);
+	}
+	else {
+		write(0);
+	}
+
+	if($a = $b) then {
+		write(1);
+	}
+	else {
+		write(0);
+	}
+
+	write(!$a);
+	write(!$b);
+
+	write($a & $b);
+	write($a | $b);
+}

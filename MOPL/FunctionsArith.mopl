@@ -1,0 +1,28 @@
+int $globArray[2];
+
+add(int $a, int $b)
+int $c;
+{
+	$c = $a + $b;
+	return $c;
+}
+
+mult(int $a, int $b)
+int $c;
+{
+	$c = $a * $b;
+	return $c;
+}
+
+main() 
+int $a, int $b;
+{
+	$globArray[0] = read();
+	$globArray[1] = read();
+
+	$a = $globArray[0];
+	$b = $globArray[1];
+	
+	write(add($a, $b));
+	write(mult($a, $b));
+}

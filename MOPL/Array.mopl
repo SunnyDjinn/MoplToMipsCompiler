@@ -1,0 +1,33 @@
+int $fibonacci[2];		# Global Array
+
+fibonacciSeq(int $k) 		# Computes and returns the kth fibonacci number / function declaration
+int $i, int $next;
+{
+	if($k < 3) then {	# Is statement
+		return 1;	# return statement
+	}
+	$i = 2;			# Affectation integer
+	
+	write(1);		# Write statement integer
+	write($fibonacci[1]);	# Write statement array
+
+	while ($i < $k) do {	# While loop
+
+		$next = $fibonacci[0] + $fibonacci[1];	# Operation (add)
+		$fibonacci[0] = $fibonacci[1];
+		$fibonacci[1] = $next;	
+		$i = $i + 1;
+		write($next);
+	}
+	return $next;
+}
+
+
+main() 					# Main function
+int $result;				# Variable declaration
+{
+	$fibonacci[0] = 1;
+	$fibonacci[1] = 1;
+
+	$result = fibonacciSeq(read());	# Function call an read call 
+}
