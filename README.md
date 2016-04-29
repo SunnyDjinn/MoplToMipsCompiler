@@ -5,6 +5,6 @@ Contains scanner, parser, abstract syntax tree, symbols table and MIPS code gene
 
 Requires Flex for scanner and Bison or Yacc for parser. 
 
-Generates code from MOPL fictive programming language. Samples of this language are aailable in the MOPL folder
+Generates code from MOPL fictive programming language. Samples of this language are available in the MOPL folder
 
-Lacks documentation and some features of a programming language such as floats number and local arrays, for now
+Lacks documentation and some features of a programming language such as float numbers and local arrays, for now
